@@ -115,3 +115,53 @@ main {
     transform: translate(-50%, -50%);
 }
 
+:root {
+    --time-animation-entrance: 2s;
+}
+
+body {
+    animation: overflowHidden steps(1) var(--time-animation-entrance);
+}
+
+
+@keyframes overflowHidden {
+    from { overflow: hidden }
+    to   { overflow: initial; }
+}
+
+
+.enter-left {
+    animation: enterLetft var(--time-animation-entrance);
+}
+
+@keyframes enterLetft {
+    from { transform: translateX(-100vw); }
+    to   { transform: initial; }
+}
+
+.enter-right {
+    animation: enterRight var(--time-animation-entrance);
+}
+
+@keyframes enterRight {
+    from { transform: translateX(100vw); }
+    to   { transform: initial; }
+}
+
+.enter-bottom {
+    animation: enterBottom var(--time-animation-entrance);
+}
+
+@keyframes enterBottom {
+    from { transform: translateY(100vh); }
+    to   { transform: initial; }
+}
+
+.enter-top {
+    animation: enterTop 2s;
+}
+
+@keyframes enterTop {
+    from { transform: translateY(-100vh); }
+    to   { transform: initial; }
+}

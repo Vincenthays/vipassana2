@@ -197,6 +197,7 @@ footer {
     background-color: #FAEEBB;
     margin-top: 20px;
     font-weight: bold;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
