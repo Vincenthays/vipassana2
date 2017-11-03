@@ -60,8 +60,10 @@ main {
 }
 
 .carousel .item img {
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100%!important;
+    min-height: 100%!important;
+    width: auto!important;
+    height: auto!important;
 }
 
 .carousel-control span {
@@ -75,6 +77,15 @@ main {
 
 .carousel-indicators li.active {
     background-color: #C4B05C!important;
+}
+
+.carousel-inner .carousel-caption {
+    transform: translateY(200px);
+    transition: .7s;
+}
+
+.carousel-inner > .item:hover .carousel-caption {
+    transform: initial;
 }
 
 /* card */
@@ -105,7 +116,7 @@ main {
     overflow: hidden;
 }
 
-@media (max-width: 650px){
+@media (max-width: 450px){
     .cards > .card  {
         width: 100%;
         margin: 10px 15px;
@@ -113,38 +124,39 @@ main {
     }
 }
 
-.card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
 .card-image {
+    width: 100%;
     height: 220px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
 }
 
 .card-images {
+    width: 100%;
     height: 220px;
-    display: flex;
+    /* overflow: hidden; */
 }
+
+.card-carousel {
+    width: 200%;
+    height: 440px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .cards > .card:hover .card-carousel {
     animation: carousel 10s infinite;
 }
 
 @keyframes carousel {
-    0%, 100%   { transform: translateX(0);     }
-    25%        { transform: translateX(-100%); }
-    50%        { transform: translateX(-200%); }
-    75%        { transform: translateX(-300%); }
+    0%, 100%   { transform: translate(0, 0);     }
+    25%        { transform: translate(-50%, 0); }
+    50%        { transform: translate(-50%, -50%); }
+    75%        { transform: translate(0, -50%); }
 }
 
-.card-images > div {
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
+.card-carousel > div {
+    width: 50%;
+    height: 50%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -153,22 +165,27 @@ main {
 .card-content {
     position: relative;
     transition: 0.3s;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
 }
 
 .card-content-bg {
     position: absolute;
-    top: 0;
-    right: 0;
     width: 100%;
-    height: 300px;
+    height: 100%;
     background-color: white;
-    z-index: -1;
     opacity: .9;
 }
 
+.card-title {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
 .card-row {
+    position: relative;
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
@@ -176,8 +193,8 @@ main {
 }
 
 .card-description {
+    position: relative;
     padding: 10px;
-    
 }
 
 .card-content:hover {
