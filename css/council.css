@@ -123,7 +123,6 @@ body {
     animation: overflowHidden steps(1) var(--time-animation-entrance);
 }
 
-
 @keyframes overflowHidden {
     from { overflow: hidden }
     to   { overflow: initial; }
