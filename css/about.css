@@ -54,6 +54,13 @@ main > div:not(.bg-content) {
     width: 600px;
     max-width: 90vw;
     z-index: 1;
+    display: flex;
+    padding: 20px;
+}
+
+.card-text {
+    margin: auto;
+    text-align: justify;
 }
 
 :root {
