@@ -127,13 +127,11 @@ main {
 .card-image {
     width: 100%;
     height: 220px;
-
 }
 
 .card-images {
     width: 100%;
     height: 220px;
-    /* overflow: hidden; */
 }
 
 .card-carousel {
@@ -147,11 +145,36 @@ main {
     animation: carousel 10s infinite;
 }
 
+.cards > .card:hover * {
+    z-index: 200001;
+}
+
+.cards-bg-filter {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0;
+    z-index: -1;
+    transition: .7s;
+}
+
+.cards > .card:hover + .cards-bg-filter {
+    z-index: 200000;
+    opacity: .7;
+}
+
 @keyframes carousel {
     0%, 100%   { transform: translate(0, 0);     }
     25%        { transform: translate(-50%, 0); }
     50%        { transform: translate(-50%, -50%); }
     75%        { transform: translate(0, -50%); }
+}
+
+.card-images {
+    position: relative;
 }
 
 .card-carousel > div {
