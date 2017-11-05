@@ -185,6 +185,24 @@ main {
     background-repeat: no-repeat;
 }
 
+.cover-1  { background-image: url('../img/events/cover-1.jpg')  }
+.cover-2  { background-image: url('../img/events/cover-2.jpg')  }
+.cover-3  { background-image: url('../img/events/cover-3.jpg')  }
+.cover-4  { background-image: url('../img/events/cover-4.jpg')  }
+.cover-5  { background-image: url('../img/events/cover-5.jpg')  }
+.cover-6  { background-image: url('../img/events/cover-6.jpg')  }
+.cover-7  { background-image: url('../img/events/cover-7.jpg')  }
+.cover-8  { background-image: url('../img/events/cover-8.jpg')  }
+.cover-9  { background-image: url('../img/events/cover-9.jpg')  }
+.cover-10 { background-image: url('../img/events/cover-10.jpg') }
+.cover-11 { background-image: url('../img/events/cover-11.jpg') }
+.cover-12 { background-image: url('../img/events/cover-12.jpg') }
+.cover-13 { background-image: url('../img/events/cover-13.jpg') }
+.cover-14 { background-image: url('../img/events/cover-14.jpg') }
+.cover-15 { background-image: url('../img/events/cover-15.jpg') }
+.cover-16 { background-image: url('../img/events/cover-16.jpg') }
+.cover-17 { background-image: url('../img/events/cover-17.jpg') }
+
 .card-content {
     position: relative;
     transition: 0.3s;
