@@ -55,6 +55,10 @@ main {
     z-index: -1;
 }
 
+.team-member-1 { background-image: url('../img/team/member-1.jpg') }
+.team-member-2 { background-image: url('../img/team/member-2.jpg') }
+.team-member-3 { background-image: url('../img/team/member-3.jpg') }
+
 .member-image-bg {
     background-color: #FAE0AF;
     opacity: 0;

@@ -145,10 +145,6 @@ main {
     animation: carousel 10s infinite;
 }
 
-.cards > .card:hover * {
-    z-index: 200001;
-}
-
 .cards-bg-filter {
     position: fixed;
     top: 0px;
@@ -159,6 +155,10 @@ main {
     opacity: 0;
     z-index: -1;
     transition: .7s;
+}
+
+.cards > .card:hover * {
+    z-index: 200001;
 }
 
 .cards > .card:hover + .cards-bg-filter {
